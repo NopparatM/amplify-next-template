@@ -7,8 +7,7 @@ import { Bucket } from "aws-cdk-lib/aws-s3";
 
 const backend = defineBackend({
   auth,
-  data,
-  storage
+  data
 });
 
 const customBucketStack = backend.createStack("custom-bucket-stack");
